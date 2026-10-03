@@ -1,0 +1,118 @@
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(252, 230, 211);
+    color: rgb(14, 104, 14);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: rgb(17, 126, 17);
+}
+
+.logo {
+    color: white; 
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 30px;
+    margin-left: 20px;
+}
+
+.navi > ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;  
+}
+
+.navi a{
+    color: white;
+    text-decoration: none;
+}
+.navi a:hover{
+    color: lightgreen;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute; 
+    top: 100%;
+    left: 0;
+    min-width: 140px; 
+    display: none;
+    list-style: none;
+    background-color: rgb(77, 179, 77);
+    padding: 10px 5px;
+    z-index: 10; 
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: grey;
+}
+
+/* MAIN */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 40px 0;
+}
+
+h1 {
+    margin-bottom: 30px; /* lävistys */
+}
+
+.intro {
+    color: rgb(14, 104, 14);
+    max-width: 700px;
+    margin-bottom: 60px;
+    margin-left: 20px;
+}
+
+h2 {
+    margin: 20px 20px;
+}
+
+.main-text p {
+    margin: 20px 20px; 
+    line-height: 110%;
+}
+
+.main-text ul {
+    margin: 20px 40px; 
+    line-height: 110%;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: rgb(77, 179, 77);
+    color: white;
+    padding: 20px 20px; 
+    font-size: smaller;
+}
+.footer-bold {
+    font-weight: bold;
+}

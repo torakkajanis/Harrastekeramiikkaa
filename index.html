@@ -3,24 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Tähän tulee linkitys css:ään-->
-    <title>Document</title>
+    <title>Keramiikka-sivusto</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <header>
-        <h1>Harrastekeramiikkaa</h1>
-        <nav>
-            <a href="#etusivu">Etusivu</a>
-            <a href="#galleria">Galleria</a>
-            <a href="#yhteys">Yhteystiedot</a>
+    <header class="header">
+        <a href="#" class="logo">Emmin keramiikka-sivusto</a>
+        <nav class="navi">
+            <ul>
+                <li><a href="index.html">Etusivu</a></li>
+                <li class="dropdown"><a href="galleria.html">Galleria</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="galleria.html#pollot">Pöllöt</a></li>
+                        <li><a href="galleria.html#ruukut">Ruukut</a></li>
+                        <li><a href="galleria.html#astiat">Astiat</a></li>
+                        <li><a href="galleria.html#koriste-esineet">Koriste-esineet</a></li>
+                    </ul>
+                </li>
+                <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+            </ul>
         </nav>
     </header>
-    <main>
-        <article>
+
+    <main class="container">
+        <section class="intro">
+            <h1>Harrastekeramiikkaa</h1>
+            <p>Tältä sivustolta löydät perustietoa keramiikasta ja Emmin keramiikkatöiden gallerian, joka tehty osana web-kehittämisen opintojaksoa.</p>
+        </section>
+
+        <article class="main-text">
             <section>
                 <h2>Mitä keramiikka on?</h2>
-                <p>Tähän tulee tekstiä, mitä keramiikka on..</p>
+                <p>Keramiikka eli savityöt ovat käsin tai työkaluilla muotoiltuja esineitä, jotka valmistetaan savesta ja kovetetaan polttamalla korkeassa lämpötilassa. Keramiikkaa käytetään esimerkiksi astioiden, maljakoiden, koriste-esineiden ja taideteosten valmistukseen. Savi on helposti muotoiltava materiaali, minkä vuoksi siitä voidaan tehdä monenlaisia tuotteita. Polttamisen jälkeen keramiikasta tulee kovaa ja kestävää, mutta samalla melko haurasta. Keramiikka on yksi vanhimmista ihmisten käyttämistä materiaaleista, ja sitä on valmistettu jo tuhansien vuosien ajan.</p>
             </section>
 
             <section>
@@ -34,7 +49,7 @@
 
             <section>
                 <h2>Keramiikan eri tekniikoita</h2>
-                <p>Tähän tulee tekstiä, miten keramiikkaa voi tehdä</p>
+                <p>Keramiikkaa voidaan valmistaa useilla eri tekniikoilla. Yleisiä menetelmiä ovat käsinrakennus, makkaratekniikka, levytekniikka ja dreijaus. Käsinrakennuksessa savi muotoillaan käsin haluttuun muotoon. Makkaratekniikassa esine rakennetaan savesta pyöritetyistä nauhoista eli "makkaroista". Levytekniikassa käytetään tasaisiksi kaulittuja savilevyjä. Dreijauksessa savi muotoillaan pyörivän dreijan avulla esimerkiksi kulhoiksi tai kupeiksi. Valmis savityö kuivataan ja poltetaan uunissa, minkä jälkeen se voidaan lasittaa ja polttaa uudelleen.</p>
                 <!--Tähän kohtaan voidaan tehdä myös taulukko, johon laitetaan muutama esimerkki savilaaduista ja polttolämpötiloista-->
             </section>
         </article>
@@ -47,13 +62,13 @@
                 <span class="klikkaa"><a href="galleria.html#ruukut">Ruukut</a></span>
                 <span class="klikkaa"><a href="galleria.html#astiat">Astiat</a></span>
                 <span class="klikkaa"><a href="galleria.html#koriste">Koriste-esineet</a></span>
-                <!-- Näistä tarkoitus tulla klikattavia kohtia, jotka ohjaa Galleria-sivulle suoraan kyseiseen kohtaan-->
+                <!-- Näistä tarkoitus tulla vähän nätempiä klikattavia kohtia, jotka ohjaa Galleria-sivulle suoraan kyseiseen kohtaan-->
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>Keraamikko tavoitettavissa:</p>
+    <footer class="footer">
+        <p class="footer-bold">Keraamikko tavoitettavissa:</p>
         <p>Paikan päällä savipajalla torstai-iltaisin</p>
          <a href="mailto:keraamikko@savityo.fi">Tai sähköpostilla milloin vain</a>
         <p>&copy; Ems 2026</p>
