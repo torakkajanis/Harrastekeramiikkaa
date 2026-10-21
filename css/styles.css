@@ -8,9 +8,11 @@
 
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: rgb(252, 230, 211);
+    background-color:bisque;
     color: rgb(14, 104, 14);
 }
+
+/*HEADER*/
 
 .header {
     display: flex;
@@ -78,6 +80,9 @@ body{
     max-width: 1200px;
     margin: 0 auto; 
     padding: 40px 0;
+    min-height: 100vh;
+    display: flex; 
+    flex-direction: column;
 }
 
 h1 {
@@ -91,6 +96,12 @@ h1 {
     margin-left: 20px;
 }
 
+.main-text {
+    display: flex; 
+    flex-direction: column;
+    gap: 60px;
+}
+
 h2 {
     margin: 20px 20px;
 }
@@ -100,10 +111,134 @@ h2 {
     line-height: 110%;
 }
 
-.main-text ul {
+.item1 {
+    background-color:  rgb(252, 230, 211);
+    border: 3px solid rgb(14, 104, 14);
+}
+
+.item2 {
+    background-color:  rgb(252, 230, 211);
+    border: 3px solid rgb(14, 104, 14);
+}
+
+.item2 ul {
     margin: 20px 40px; 
     line-height: 110%;
 }
+
+/*item 3 on oma, koska tähän tulee myöhemmin taulukko*/
+.item3 {
+    background-color:  rgb(252, 230, 211);
+    border: 3px solid rgb(14, 104, 14);
+}
+
+.item4 div {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.item4 div span a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(17, 126, 17);
+}
+
+.item4 div span a:hover {
+    background-color: rgb(77, 179, 77);
+}
+
+/* GALLERIA-SIVU */
+
+#pollot {
+
+}
+            
+#ruukut {
+
+}
+
+#astiat {
+
+}
+
+#koriste-esineet {
+
+}
+
+/* Muokkaa näitä vielä erikseen halutunlaiseksi 4. vaiheen palautusta varten */
+.carousel-section {
+    margin-bottom: 50px;
+}
+.carousel-section p {
+    margin-bottom: 40px;
+}
+.carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+    scroll-behavior: smooth;
+    padding-bottom: 40px;
+    scrollbar-width: none; 
+}
+
+.carousel-item {
+    flex: 0 0 80%;
+    scroll-snap-align: center; 
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8 px rgba(0, 0, 0, 0.20);
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.carousel-item figcaption {
+    padding: 30px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.carousel-nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.carousel-nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(17, 126, 17);
+}
+
+.carousel-nav a:hover {
+    background-color: rgb(77, 179, 77);
+}
+
+
+/* YHTEYSTIEDOT */
+
+
 
 /* FOOTER */
 
@@ -112,6 +247,7 @@ h2 {
     color: white;
     padding: 20px 20px; 
     font-size: smaller;
+
 }
 .footer-bold {
     font-weight: bold;
